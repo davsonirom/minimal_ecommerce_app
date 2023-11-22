@@ -44,7 +44,9 @@ class MinimalEcommercePage extends StatelessWidget {
               ),
               //! button
               WidgetBotao(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/shop_page');
+                },
                 child: const Icon(Icons.arrow_forward),
               ),
             ],
