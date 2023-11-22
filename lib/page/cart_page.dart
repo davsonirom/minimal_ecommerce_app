@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:minimal_ecommerce_app/widgets/widget_drawer.dart';
 
-class ShopPage extends StatelessWidget {
-  const ShopPage({super.key});
+class CartPage extends StatelessWidget {
+  const CartPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
-        elevation: 0,
         backgroundColor: Colors.transparent,
+        elevation: 0,
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('Shop Page'),
+        title: const Text('Cart Page'),
       ),
-      drawer: const WidgetDrawer(),
       body: Container(),
     );
   }

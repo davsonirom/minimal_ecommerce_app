@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minimal_ecommerce_app/page/cart_page.dart';
 import 'package:minimal_ecommerce_app/page/shop_page.dart';
 import 'package:minimal_ecommerce_app/themes/light_mode.dart';
 
@@ -21,6 +22,7 @@ class MiaSoftware39 extends StatelessWidget {
       routes: {
         '/minimal_ecommerce_page': (context) => const MinimalEcommercePage(),
         '/shop_page': (context) => const ShopPage(),
+        '/cart_page': (context) => const CartPage(),
       },
     );
   }

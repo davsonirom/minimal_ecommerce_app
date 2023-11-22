@@ -45,6 +45,7 @@ class WidgetDrawer extends StatelessWidget {
                   //* close drawer frist
                   Navigator.pop(context);
                   //* go to page cart
+                  Navigator.pushNamed(context, '/cart_page');
                 },
               ),
             ],
@@ -55,7 +56,10 @@ class WidgetDrawer extends StatelessWidget {
             child: WidgetListTile(
               text: "Exit",
               icon: Icons.exit_to_app,
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamedAndRemoveUntil(
+                    context, '/minimal_ecommerce_page', (route) => false);
+              },
             ),
           ),
         ],
