@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 class WidgetBotao extends StatelessWidget {
   const WidgetBotao({
-    Key? key,
+    super.key,
     this.onTap,
     required this.child,
-  }) : super(key: key);
+  });
 
   final void Function()? onTap;
   final Widget child;
